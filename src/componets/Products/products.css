@@ -1,0 +1,27 @@
+.product-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    flex-wrap: wrap;
+    
+}
+
+.product-cont {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    padding: 10rem 0;
+}
+
+.product-cont h1 {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: left;
+}
+

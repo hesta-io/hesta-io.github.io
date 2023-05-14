@@ -1,0 +1,122 @@
+.testimonials-cont {
+    background: #fff;
+}
+
+.testimonial-thumbnail:hover {
+    cursor: pointer;
+}
+
+.testimonials-page {
+    background: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12rem 0;
+}
+
+
+.testimonial-thumbnail {
+    
+    height: 125px;
+    color: black;
+    padding: 18px 140px 50px 22px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 95px;
+}
+
+.selected {
+    cursor: pointer;
+    box-shadow: 0px 10px 200px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-thumbnail div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2rem;
+
+}
+
+.testimonial-thumbnail img {
+    width: 52px;
+    height: 52px;
+}
+
+.testimonial-thumbnail h1 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 10px;
+    /* or 200% */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #332B2B;
+
+}
+
+.testimonial-thumbnail p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+    /* or 286% */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #9795A5;
+}
+
+/*testimonials-review*/
+
+.testimonials-review {
+    max-width: 530px;
+    background: #fff;
+}
+
+.testimonials-review img {
+    width: 132px;
+    height: 25;
+}
+
+.testimonials-review h1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #0E111E;
+}
+
+.testimonials-review p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+    color: #525260;
+
+}
+
+.testimonial-active {
+    display: block;
+}
+
+@media (max-width: 1050px) {
+    .testimonial-active {
+        display: none;
+    }
+    .testimonials-page {
+        padding: 10rem 3rem;
+    }
+    .testimonials-review p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 34px;
+        letter-spacing: 0.03em;
+        color: #525260;
+    
+    }
+}
+

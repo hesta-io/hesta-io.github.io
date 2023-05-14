@@ -1,0 +1,54 @@
+.services-content {
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.services-content img {
+    color: #f3f3f3;
+    display: inline-block;
+}
+
+.services-content p {
+    max-width: 850px;
+    padding-top: 25px;
+}
+
+.services-content h1 {
+    display: inline;
+}
+
+.br-cont {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.br-cont h1 {
+    padding: 0 55px;
+}
+
+.brL {
+    background: url('../../../public/bracketL.svg') no-repeat;
+    width: 25px;
+    height: 50px;
+    
+}
+
+.brR {
+    background: url('../../../public/bracketR.svg') no-repeat;
+    width: 25px;
+    height: 50px;
+}
+
+
+@media (max-width: 530px ){
+    .services-content p br {
+        display: none;
+    }
+}
+

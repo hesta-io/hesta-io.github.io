@@ -1,0 +1,160 @@
+.nav-bg {
+  background: #000814;
+}
+
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    height: 9vh;
+    color: #fff;
+    background: #000814;
+    padding: 1rem 13rem;
+  }
+.Navbar-logo img {
+    width: 45px;
+    height: 45px;
+}
+  .empty-box {
+    display: block;
+  }
+  .Navbar-logo a {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .Navbar-menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Navbar-menu li {
+    margin: 0 30px;
+  }
+  
+  .Navbar-menu a {
+    font-size: 1rem;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .Navbar-menu a:hover, a:focus {
+    color: #1ED07C;
+    transition: 0.45s ease-in-out;
+  }
+  
+  .Navbar-toggle {
+    display: none;
+  }
+  
+
+/*Media Querry*/
+@media (max-width: 1150px) {
+  .Navbar {
+      padding-left: 8rem;
+  }
+}
+
+
+
+  @media (max-width: 768px) {
+    .Navbar {
+      flex-direction: row;
+      align-items: center;
+      color: #000814;
+      padding-right:4rem ;
+      
+    }
+    .empty-box {
+        display: none;
+      }
+  
+    .Navbar-menu {
+      display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        width: 220px;
+        height: 300px;
+        padding: 1rem;
+        background-color: #1ED07C;
+        z-index: 9000;
+    }
+    
+    .Navbar-menu ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        text-align: right;
+    }
+
+    .Navbar-menu ul li {
+        padding-bottom: 10px;
+    }
+
+    .Navbar-menu ul li a{
+        color: #000814;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .Navbar-menu a:hover, a:focus {
+        color: #000814;
+        transition: 0.45s ease-in-out;
+      }
+  
+    .Navbar-menu.active {
+        display: block;
+        animation: slideIn 0.5s forwards;
+      }
+  
+    .Navbar-toggle {
+      display: block;
+      cursor: pointer;
+      z-index: 9999;
+    }
+  
+    .Navbar-toggle span {
+      display: block;
+      height: 3px;
+      width: 25px;
+      margin: 5px;
+      background-color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .Navbar-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .Navbar-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .Navbar-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+  @keyframes slideIn {
+    from {
+      right: -100%;
+    }
+    to {
+      right: 0;
+    }
+  }
+
+  @media (max-width: 630px) {
+    .Navbar {
+      padding: 2rem;
+    }
+    
+  }
