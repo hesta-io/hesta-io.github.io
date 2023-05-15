@@ -9,23 +9,31 @@
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .info2 h1 {
+    max-width: 300px;
+ 
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 56px;
     line-height: 156.5%;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.025em;
     color: #141414;
 }
 
 .info2 p {
     width: 50%;
+    font-style: normal;
     font-weight: 400;
-    font-size: 1.3vw;
+    font-size: 22px;
     line-height: 155%;
-    color: #1F1D1D;
+    /* or 34px */
+
+
+color: #1F1D1D;
 }
 
 @media (max-width: 1000px){

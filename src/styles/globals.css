@@ -40,3 +40,14 @@ html {
   ::-webkit-scrollbar-thumb:hover {
     background: #1ED07C;
   }
+
+  .animated-component {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: all 0.85s ease-in-out;
+  }
+  
+  .animated-component.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }

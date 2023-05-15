@@ -2,7 +2,7 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div className='services-container max-w'>
+    <div className='services-container max-w' id='services'>
       <div className="services-content">
         <p>WHAT WE DO?</p>
         <div className="br-cont">

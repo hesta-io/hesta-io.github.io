@@ -2,14 +2,14 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id='contact'>
       <div className='footer-cont max-w' >
         <div className="footer-upper">
           <div className="up-L">
             <h1>Let's Talk.</h1>
             <a href="#">info@hesta.io</a>
           </div >
-          <img className='footer-image' src="logoB.svg" alt="hesta-Logo" />
+          {/* <img className='footer-image' src="logoB.svg" alt="hesta-Logo" /> */}
         </div>
 
         <div className="footer-down">

@@ -69,7 +69,7 @@ const Sliders = () => {
     <div className="sliders">
       <Slider ref={slider} {...settings} style={{ display: 'flex' }} >
         {dataDigitalBestSeller.map((item, dataDigitalBestSeller) => (
-          <div className="card">
+          <div className="card" key={dataDigitalBestSeller}>
             <div className='card-img-cont'>
               <img src={item.img}/>
             </div>

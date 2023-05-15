@@ -11,7 +11,7 @@
     height: 9vh;
     color: #fff;
     background: #000814;
-    padding: 1rem 13rem;
+    padding: 3rem 13rem;
   }
 .Navbar-logo img {
     width: 45px;
@@ -27,6 +27,14 @@
     text-decoration: none;
   }
   
+  .Navbar-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+  }
+
   .Navbar-menu ul {
     display: flex;
     justify-content: space-between;
@@ -49,7 +57,18 @@
     color: #1ED07C;
     transition: 0.45s ease-in-out;
   }
-  
+
+  .nav-booking button{
+    padding: 2px 25px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+    color: #050505;
+    display: block;
+  }
+
+
   .Navbar-toggle {
     display: none;
   }
@@ -58,7 +77,12 @@
 /*Media Querry*/
 @media (max-width: 1150px) {
   .Navbar {
+      padding-right: 2rem;
       padding-left: 8rem;
+  }
+  .nav-booking button{
+     
+    padding: 3px 10px;
   }
 }
 
@@ -75,6 +99,12 @@
     .empty-box {
         display: none;
       }
+
+      .nav-booking button{
+     
+        display: none;
+      }
+    
   
     .Navbar-menu {
       display: none;

@@ -12,7 +12,7 @@ const Testimonials = () => {
   return (
     <div className="testimonials-cont">
       <div className="testimonials-page max-w">
-        <div tabindex="1" className="testimonials-thumbnails testimonial-active">
+        <div className="testimonials-thumbnails testimonial-active">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}

@@ -18,25 +18,26 @@ function Navbar( { hero_nav} ) {
         <div className={`Navbar-menu ${isMobile ? 'active' : ''}`}>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a href="">Home</a>
             </li>
             <li>
-              <a href="/">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="/">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li>
-              <a href="/">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
+          
         </div>
-        <div className='empty-box'></div>
+        <div className='nav-booking' >
         <div className={`Navbar-toggle ${isMobile ? 'active' : ''}`} onClick={handleMenuClick}>
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </div><button>Book a Metting</button></div>
       </nav>
     </div>
     

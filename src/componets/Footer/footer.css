@@ -1,13 +1,15 @@
 .footer {
     background: #F8F8F8;
+    height: 60vh;
+    overflow: hidden;
 }
 
 .footer-cont {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 200px;
-    padding: 140px;
+    gap: 70px;
+    padding: 110px 60px;
     
 }
 
@@ -32,14 +34,14 @@
 
 .up-L h1 {
     font-weight: 900;
-    font-size: 4.2vw;
+    font-size: 3.2vw;
     letter-spacing: -0.05em;
     color: #020202;
 }
 
 .up-L a {
     font-weight: 600;
-    font-size: 3.3vw;
+    font-size: 2.1vw;
     color: #020202;
 }
 
@@ -48,13 +50,13 @@
 }
 .down-L {
     font-weight: 500;
-    font-size: 1.6vw;
+    font-size: 1vw;
     color: #666666;
 } 
 
 .down-R h1 {
     font-weight: 600;
-    font-size: 1.7vw;
+    font-size: 1vw;
     text-align: right;
     color: #020202;
     padding-bottom:10px ;
@@ -62,7 +64,7 @@
 
 .down-R p {
     font-weight: 500;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     text-align: right;
     color: #666666;
 }
@@ -92,6 +94,10 @@
 }
 
 @media (max-width: 800px) {
+    .footer {
+        background: #F8F8F8;
+        height: 60vh;
+    }
     .footer-cont {
         gap: 0;
         padding: 40px;

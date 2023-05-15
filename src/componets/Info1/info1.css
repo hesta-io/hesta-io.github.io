@@ -8,16 +8,32 @@
 }
 
 .info1 p {
-    font-size: 2.45vw;
-    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
     line-height: 70px;
-    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.075em;
+    color: #D0CFCC;
 }
 
 .info1 p span {
     color: #1ED07C;
     font-weight: 700;
 }
+
+.info1-brL {
+    background: url('../../../public/bracketL.svg') no-repeat;
+    width: 25px;
+    height: 50px;
+    
+}
+
+.info-brR {
+    background: url('../../../public/bracketR.svg') no-repeat;
+    width: 10vw;
+    height: 20vw;
+}
+
 
 @media (max-width: 1300px) {
     .info1 p {
@@ -53,11 +69,12 @@
 
 @media (max-width: 520px) {
     .info1 p {
-        font-size: 26px;
-        line-height: 45px;
+        font-size: 18px;
+        line-height: 40px;
         text-align: left;
         display: inline-block;
     }
     
     
 }
+

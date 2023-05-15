@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 const ImageCard = ({ imageUrl, title, link, disc}) => {
   const [isHovering, setIsHovering] = useState(false);
 
-  const handleClick = () => {
-    window.open('https://www.facebook.com', '_blank'); // Replace with your desired website URL
+  const handleClick = ({link}) => {
+    window.open({link}); // Replace with your desired website URL
   };
 
   
@@ -22,13 +22,14 @@ const ImageCard = ({ imageUrl, title, link, disc}) => {
      <div className='imagecard-cont'>
         <div
             className={`ImageCard ${isHovering ? 'ImageCard--hover' : ''}`}
-            onClick={handleClick}
+            
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+            target='_blank'
             >
             <div className="ImageCard__overlay" />
             <img src={imageUrl} alt={title} className="ImageCard__image" />
-            {/* <a className="ImageCard__title">{title}</a> */}
+            <a href={link} className="ImageCard__title"></a>
         </div>
         <div className='imagecard-bottom'>
             <h1>{title}</h1>

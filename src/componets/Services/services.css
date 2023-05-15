@@ -50,5 +50,16 @@
     .services-content p br {
         display: none;
     }
+    .br-cont h1 {
+        padding: 0 10px;
+        font-size: 28px;
+    }
+    .services-content {
+        padding: 0 20px;
+    }
+
+    .brL, .brR {
+        display: none;
+    }
 }
 
