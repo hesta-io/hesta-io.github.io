@@ -6,13 +6,12 @@ const Clients = () => {
       <h1>Trusted By</h1>
 
       <div className="clients-list">
-          <img src="toyota.svg" alt="" />
-          <img src="c1.svg" alt="" />
-          <img src="c3.svg " alt="" />
-          <img src="c4.svg " alt="" />
-          <img src="c5.svg" alt="" />
-          <img src="c6.svg" alt="" />
-          <img src="c2.svg" alt="" /> 
+          <img src="assets/logos/toyota.svg" alt="Toyota Iraq" />
+          <img src="assets/logos/frobel.png" height="70px" alt="Frobel" />
+          <img src="assets/logos/sticker-technology.png" height="90px" alt="Sticker Technology" />
+          <img src="assets/logos/arminas.png" height="130px" alt="Arminas Iraq" />
+          <img src="assets/logos/pepu.svg" height="130px" alt="Pepu" />
+          <img src="assets/logos/bleety.svg" height="70px" alt="Bleety App" />
       </div>
     </div>
   );
