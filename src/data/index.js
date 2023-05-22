@@ -42,26 +42,18 @@ export const dataDigitalBestSeller = [
 
   export const testimonials = [
     {
-      name: "Maria Austen",
-      image: "maria.svg",
-      placement:`facebook, instagram`,
+      name: "Zainab K. Mandalawi",
+      image: "https://pbs.twimg.com/profile_images/1585383980328779781/l4MVy9gw_400x400.jpg",
+      placement:`Chief Executive Officer At Frobel`,
       rating:"Rate.svg",
-      review: `I cannot thank your team enough for the outstanding job they did on my website! From the initial consultation to the final launch, everything was handled with the utmost professionalism and care.
-      I was particularly impressed with the attention to detail and the willingness to go above and beyond to ensure that everything was perfect. I have received so many compliments on the new site and have seen a significant increase in traffic and conversions since its launch.`
+      review: `Hesta’s exceptional expertise and commitment to delivering outstanding results have surpassed our expectations. From the first interaction, their team has shown a great level of understanding of the industry trends and technologies, ensuring that our website is not only visually captivating but also highly functional. Their attention to details, effective communication, and timely delivery make them the ideal choice for any web development project.`
     },
     {
-      name: "John D.Roger",
-      image: "DRoger.svg",
-      placement:`facebook`,
+      name: "Ruwayda Mustafah",
+      image: "https://pbs.twimg.com/profile_images/1647675603322019840/n8j5hfCC_400x400.jpg",
+      placement:`Public Relations Manager at Rudaw Media Network`,
       rating:"Rate.svg",
-      review: `I had a wonderful experience working with this team to redesign my company's website. They were highly responsive and communicated clearly throughout the process, keeping me updated on progress and asking for my input at every step. Their design work was top-notch and they were always willing to make changes based on my feedback. I couldn't be happier with the final result and have received numerous compliments on the new site. Thank you for your hard work and dedication!`
-    },
-    {
-      name: "Bob Johnson",
-      image: "samGorge.svg",
-      placement:`instagram`,
-      rating:"Rate.svg",
-      review: `I recently hired this team to create a custom e-commerce site for my business, and I was blown away by their expertise and professionalism. They took the time to understand my needs and goals and delivered a site that exceeded my expectations. The site is not only visually stunning, but also easy to use and navigate, with all the features I requested and more. I was also impressed with their post-launch support and responsiveness to any issues that arose. I highly recommend this team to anyone looking for a top-notch web development experience.`
+      review: `I had the pleasure of working with HESTA company that built our women.krd platform, and I must say I was very impressed with their level of service. From the initial consultation to the final delivery, they were professional, communicative, and committed to bringing my vision to life. The development team worked tirelessly to ensure that my website was not only visually appealing but also functional and easy to navigate. Each step of the process was transparent and well-coordinated, and they kept me involved throughout the development cycle, addressing my queries and concerns promptly. Their expertise and attention to detail were evident in every aspect of the website, and I couldn't be happier with the result. I would highly recommend them to anyone looking for an exceptional web development experience.`
     }
   ];
 

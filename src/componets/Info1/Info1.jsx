@@ -7,7 +7,7 @@ const Info1 = () => {
       
       <p>We specialize in turning your ideas into reality,<br className='br-rem'/>
         we take care of everything from <span>branding</span> to <br className='br-rem'/>
-        <span>mobile application</span> and <span>web design</span>, so you <br className='br-rem'/>focus on what you do best, growing your business.
+        <span>prototype</span>  then to <span>mobile application</span> or <span>web design</span>, <br className='br-rem'/>so you focus on what you do best, growing your business.
       </p>
       {/* <div className="info-brR"></div> */}
 

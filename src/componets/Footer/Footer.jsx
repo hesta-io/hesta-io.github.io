@@ -13,13 +13,13 @@ const Footer = () => {
         </div>
 
         <div className="footer-down">
-          <div className="down-L">We can help you <br /> successfuly complete it.</div>
+          <div className="down-L" style={{color:'#1ED07C'}}>We can help you <br /> successfuly complete it.</div>
           <div className="down-R">
             <h1>Contact Us</h1>
             <p>+964 750 766 5935</p>
-            <p>+964 750 766 5935</p>
+            <p>+964 750 313 3824</p>
             <p>info@hesta.io</p>
-            <p>Erbil, Justice Tower, Floor 1, Office 5</p>
+            <p>Erbil, Bakhtyari White Diamond Building, Floor 1, Office 5</p>
           </div>
         </div>
         </div>

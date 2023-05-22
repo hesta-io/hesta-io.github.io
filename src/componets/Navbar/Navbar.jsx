@@ -38,7 +38,7 @@ function Navbar({ hero_nav }) {
             <span></span>
             <span></span>
           </div>
-          <a href="mailto:info@hesta.io">Book a Metting</a>
+          <a href="https://calendly.com/aramrafeq/30min">Book a Metting</a>
         </div>
       </nav>
     </div>

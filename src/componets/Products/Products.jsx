@@ -66,7 +66,7 @@ function AnimatedComponent({ children }) {
         }
       };
     }, []);
-  
+    return null;
     return (
     <div className='product-cont max-w'>
       <h1>Our Work</h1>

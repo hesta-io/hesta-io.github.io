@@ -1,6 +1,5 @@
-import Head from 'next/head'
 
-import { Navbar, ImageCard, Hero, Clients, Footer, Info1, Info2, Products, Services, Testimonials } from '../componets/'
+import {  Hero, Clients, Footer, Info1, Info2, Products, Services, Testimonials } from '../componets'
 import { Sliders } from '../constants'
 import { useState, useEffect, useRef } from 'react';
 
@@ -71,9 +70,6 @@ export default function Home() {
   return (
 
     <div className='body-box'>
-      <Head>
-        <title>Hesta</title>
-      </Head>
       <AnimatedComponent>
         <Hero />
       </AnimatedComponent>
