@@ -10,6 +10,7 @@ const Clients = () => {
           <img src="assets/logos/frobel.png" height="70px" alt="Frobel" />
           <img src="assets/logos/sticker-technology.png" height="90px" alt="Sticker Technology" />
           <img src="assets/logos/arminas.png" height="130px" alt="Arminas Iraq" />
+          <img src="assets/logos/akeed-express.svg" height="130px" alt="Akeed Express" />
           <img src="assets/logos/pepu.svg" height="130px" alt="Pepu" />
           <img src="assets/logos/bleety.svg" height="70px" alt="Bleety App" />
       </div>
