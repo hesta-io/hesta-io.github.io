@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import {Navbar,ImageCard, Hero, Clients, Footer, Info1, Info2, Products, Services, Testimonials} from '../componets/'
+import { Navbar, ImageCard, Hero, Clients, Footer, Info1, Info2, Products, Services, Testimonials } from '../componets/'
 import { Sliders } from '../constants'
 import { useState, useEffect, useRef } from 'react';
 
@@ -69,39 +69,37 @@ export default function Home() {
   }, []);
 
   return (
-    
-      <div className='body-box'>
-    <Head>
-      <title>Hesta</title>
-    </Head>
-    <AnimatedComponent>
-    <Hero />
-    </AnimatedComponent>
-    <AnimatedComponent>
-    <Clients />
-    </AnimatedComponent>
-    <AnimatedComponent>
-    <Info1 />
-    </AnimatedComponent>
-    <AnimatedComponent>
-    <Services />
-    </AnimatedComponent>
-    <AnimatedComponent>
-    <Sliders />
-    </AnimatedComponent>
-    <AnimatedComponent>
-    <Testimonials />
-    </AnimatedComponent>
-    <AnimatedComponent>
-    <Products />
-    </AnimatedComponent>
-    <AnimatedComponent>
-    <Info2 />
-    </AnimatedComponent>
-    <AnimatedComponent className={`animated-component ${isLastVisible ? 'visible' : ''}`} ref={lastRef}>
-    <Footer />
-    </AnimatedComponent>
-  </div>
-      
+
+    <div className='body-box'>
+      <Head>
+        <title>Hesta</title>
+      </Head>
+      <AnimatedComponent>
+        <Hero />
+      </AnimatedComponent>
+      <AnimatedComponent>
+        <Clients />
+      </AnimatedComponent>
+      <AnimatedComponent>
+        <Info1 />
+      </AnimatedComponent>
+      <AnimatedComponent>
+        <Services />
+      </AnimatedComponent>
+      <AnimatedComponent>
+        <Sliders />
+      </AnimatedComponent>
+      <AnimatedComponent>
+        <Testimonials />
+      </AnimatedComponent>
+      <AnimatedComponent>
+        <Products />
+      </AnimatedComponent>
+      <AnimatedComponent className={`animated-component ${isLastVisible ? 'visible' : ''}`} ref={lastRef}>
+        <Info2 />
+        <Footer />
+      </AnimatedComponent>
+    </div>
+
   );
 }

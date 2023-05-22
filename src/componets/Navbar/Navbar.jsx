@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-
-function Navbar( { hero_nav} ) {
+function Navbar({ hero_nav }) {
   const [isMobile, setIsMobile] = useState(false);
 
   const handleMenuClick = () => {
@@ -9,13 +8,12 @@ function Navbar( { hero_nav} ) {
   };
 
   return (
-  <div className='nav-bg'>
-    <nav className="Navbar max-w">
-      
+    <div className="nav-bg">
+      <nav className="Navbar max-w">
         <div className="Navbar-logo">
           <img src="logo-w.svg" alt="" />
         </div>
-        <div className={`Navbar-menu ${isMobile ? 'active' : ''}`}>
+        <div className={`Navbar-menu ${isMobile ? "active" : ""}`}>
           <ul>
             <li>
               <a href="">Home</a>
@@ -30,19 +28,21 @@ function Navbar( { hero_nav} ) {
               <a href="#contact">Contact</a>
             </li>
           </ul>
-          
         </div>
-        <div className='nav-booking' >
-        <div className={`Navbar-toggle ${isMobile ? 'active' : ''}`} onClick={handleMenuClick}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div><button>Book a Metting</button></div>
+        <div className="nav-booking">
+          <div
+            className={`Navbar-toggle ${isMobile ? "active" : ""}`}
+            onClick={handleMenuClick}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <a href="mailto:info@hesta.io">Book a Metting</a>
+        </div>
       </nav>
     </div>
-    
   );
 }
 
 export default Navbar;
-

@@ -1,53 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: poppins;
-    background: #000814;
+  font-family: poppins;
+  background: #000814;
 }
+
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+
 .max-w {
-    max-width: 1500px;
-    margin: auto;
+  max-width: 1500px;
+  margin: auto;
 }
 
 /* width and height of the scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  
-  /* background of the scrollbar */
-  ::-webkit-scrollbar-track {
-    background: #000814;
-  }
-  
-  /* color of the scrollbar handle */
-  ::-webkit-scrollbar-thumb {
-    background: #1ED07C;
-    border-radius: 10px;
-    
-  }
-  
-  /* hover effect on the scrollbar handle */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #1ED07C;
-  }
+  width: 0;
+}
 
-  .animated-component {
-    opacity: 0;
-    transform: translateY(70px);
-    transition: all 0.85s ease-in-out;
-  }
-  
-  .animated-component.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* background of the scrollbar */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* color of the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: transparent; 
+
+}
+
+/* hover effect on the scrollbar handle */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.animated-component {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: all 0.5s ease-in-out;
+}
+
+.animated-component.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

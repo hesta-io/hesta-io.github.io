@@ -21,7 +21,7 @@
     height: 125px;
     color: black;
     padding: 18px 140px 50px 22px;
-    border-radius: 18px;
+    border-radius: 4px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -92,8 +92,7 @@
 
 .testimonials-review p {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 34px;
+    font-size: 18px; 
     letter-spacing: 0.03em;
     color: #525260;
 
@@ -112,8 +111,7 @@
     }
     .testimonials-review p {
         font-weight: 500;
-        font-size: 18px;
-        line-height: 34px;
+        font-size: 18px; 
         letter-spacing: 0.03em;
         color: #525260;
     

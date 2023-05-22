@@ -15,13 +15,12 @@
 
 .info2 h1 {
     max-width: 300px;
- 
     font-weight: 700;
     font-size: 56px;
-    line-height: 156.5%;
     text-align: left;
     letter-spacing: 0.025em;
     color: #141414;
+    line-height: 65px;
 }
 
 .info2 p {
