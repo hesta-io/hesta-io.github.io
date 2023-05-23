@@ -30,7 +30,7 @@
 
 .selected {
     cursor: pointer;
-    box-shadow: 0px 10px 200px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 18px #eaeaea;
 }
 
 .testimonial-thumbnail div {
@@ -91,7 +91,6 @@
 }
 
 .testimonials-review p {
-    font-weight: 500;
     font-size: 18px; 
     letter-spacing: 0.03em;
     color: #525260;
