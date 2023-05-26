@@ -1,5 +1,6 @@
 .Hero_cont {
     height: 100vh;
+    max-height: 1000px;
     background: url('../../../public/assets/tr.png');
     position: relative;
     color: white;

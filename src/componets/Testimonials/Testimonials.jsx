@@ -39,6 +39,7 @@ const Testimonials = () => {
           {selectedTestimonial ? (
             <>
               <h2>{selectedTestimonial.name}</h2>
+              <span>{selectedTestimonial.placement}</span>
               <img src={selectedTestimonial.rating} alt="" />
               <p>{selectedTestimonial.review}</p>
             </>

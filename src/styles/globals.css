@@ -25,23 +25,23 @@ body {
 }
 
 /* width and height of the scrollbar */
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 0;
 }
 
 /* background of the scrollbar */
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background: transparent;
 }
 
 /* color of the scrollbar handle */
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background: transparent; 
 
 }
 
 /* hover effect on the scrollbar handle */
-::-webkit-scrollbar-thumb:hover {
+body::-webkit-scrollbar-thumb:hover {
   background: transparent;
 }
 

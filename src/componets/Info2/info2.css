@@ -18,9 +18,12 @@
     font-weight: 700;
     font-size: 56px;
     text-align: left;
-    letter-spacing: 0.025em;
-    color: #141414;
+    letter-spacing: 0.025em; 
     line-height: 65px;
+    background: -webkit-linear-gradient(0deg, #1ED07C, rgba(31, 193, 228, 0.53));
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .info2 p {
