@@ -9,8 +9,7 @@
 /coverage
 
 # next.js
-/.next/
-/docs/
+/.next/ 
 
 # production
 /build
