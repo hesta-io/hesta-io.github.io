@@ -51,9 +51,16 @@ export const dataDigitalBestSeller = [
     {
       name: "Ruwayda Mustafah",
       image: "https://pbs.twimg.com/profile_images/1647675603322019840/n8j5hfCC_400x400.jpg",
-      placement:`Public Relations Manager at Rudaw Media Network`,
+      placement:`Public Relations Manager At Rudaw Media Network`,
       rating:"Rate.svg",
       review: `I had the pleasure of working with HESTA company that built our women.krd platform, and I must say I was very impressed with their level of service. From the initial consultation to the final delivery, they were professional, communicative, and committed to bringing my vision to life. The development team worked tirelessly to ensure that my website was not only visually appealing but also functional and easy to navigate. Each step of the process was transparent and well-coordinated, and they kept me involved throughout the development cycle, addressing my queries and concerns promptly. Their expertise and attention to detail were evident in every aspect of the website, and I couldn't be happier with the result. I would highly recommend them to anyone looking for an exceptional web development experience.`
+    },
+    {
+      name: "Abdulla Balak",
+      image: "https://pps.whatsapp.net/v/t61.24694-24/349041563_1399627370613552_3965396079834529655_n.jpg?ccb=11-4&oh=01_AdRiJOQtnrJB5gwqlH0IJaljI_GD9iPdTc8roWoV_-C4UQ&oe=64DC8480",
+      placement:`Co-Founder At Bleety`,
+      rating:"Rate.svg",
+      review: `Hesta has been an invaluable partner in bringing our app to life. Their expertise and dedication to delivering a top-notch application were evident throughout the development process, The end product surpassed our expectations, and we highly recommend Hesta for any web or mobile application development needs.`
     }
   ];
 
