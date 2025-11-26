@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const ImageCard = ({ imageUrl, title, link, disc}) => {
+const ImageCard = ({ imageUrl, title, link, disc, featured}) => {
   const [isHovering, setIsHovering] = useState(false);
 
   const handleClick = ({link}) => {
@@ -19,10 +19,11 @@ const ImageCard = ({ imageUrl, title, link, disc}) => {
   };
 
   return (
-     <div className='imagecard-cont'>
+     <div className={`imagecard-cont ${featured ? 'imagecard-cont--featured' : ''}`}>
+        {featured && <div className="featured-badge">Featured</div>}
         <div
             className={`ImageCard ${isHovering ? 'ImageCard--hover' : ''}`}
-            
+
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             target='_blank'

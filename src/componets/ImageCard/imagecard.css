@@ -88,6 +88,24 @@
     color: #A5A5A5;
   }
 
+  .imagecard-cont--featured {
+    position: relative;
+  }
+
+  .featured-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #1ED07C;
+    color: #000814;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 4px;
+    z-index: 10;
+    letter-spacing: 0.5px;
+  }
+
 @media (max-width: 850px) {
     .imagecard-cont {
         padding: 0 8vw;

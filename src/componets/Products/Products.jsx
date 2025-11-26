@@ -66,7 +66,6 @@ function AnimatedComponent({ children }) {
         }
       };
     }, []);
-    return null;
     return (
     <div className='product-cont max-w'>
       <h1>Our Work</h1>
@@ -74,7 +73,7 @@ function AnimatedComponent({ children }) {
     <AnimatedComponent>
 
     {imageData.slice(0, 1).map((data) => (
-    <ImageCard key={data.id} imageUrl={data.imageUrl} title={data.title} link={data.link} disc={data.discription}/>
+    <ImageCard key={data.id} imageUrl={data.imageUrl} title={data.title} link={data.link} disc={data.discription} featured={data.featured}/>
     ))}
     </ AnimatedComponent>
     <AnimatedComponent>
@@ -87,7 +86,7 @@ function AnimatedComponent({ children }) {
     <div className="product-row">
     <AnimatedComponent>
 
-    {imageData.slice(4, 5).map((data) => (
+    {imageData.slice(2, 3).map((data) => (
     <ImageCard key={data.id} imageUrl={data.imageUrl} title={data.title} link={data.link} disc={data.discription}/>
     ))}
     </ AnimatedComponent>
@@ -98,7 +97,7 @@ function AnimatedComponent({ children }) {
     </ AnimatedComponent>
     </div>
 
-    {/* <div className="product-row">
+    <div className="product-row">
     <AnimatedComponent>
 
     {imageData.slice(4, 5).map((data) => (
@@ -110,7 +109,7 @@ function AnimatedComponent({ children }) {
     <ImageCard key={data.id} imageUrl={data.imageUrl} title={data.title} link={data.link} disc={data.discription}/>
     ))}
     </ AnimatedComponent>
-    </div> */}
+    </div>
 
     </div>
     );
