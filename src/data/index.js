@@ -65,12 +65,12 @@ export const dataDigitalBestSeller = [
   ];
 
   export const imageData = [
-    { id: 0, imageUrl: 'message24.png', title: 'Message24', link:'https://message24.net', discription:"AI CRM for Small Businesses & Social Media Ecommerce", featured: true},
+    { id: 0, imageUrl: '/assets/logos/message24.png', title: 'Message24', link:'https://message24.net', discription:"AI CRM for Small Businesses & Social Media Ecommerce", featured: true},
     { id: 1, imageUrl: 'toyota car 300.jpg', title: 'Toyota Iraq', link:'https://toyota.iq/en', discription:"best image"},
-    { id: 2, imageUrl: 'arminas.jpg', title: 'Arminas', link:'https://www.arminas-iraq.com/' ,discription:"Real Estate"},
-    { id: 3, imageUrl: 'bleety.png', title: 'Bleety', link:'https://www.bleety.com/' ,discription:"Event Ticket"},
+    { id: 2, imageUrl: '/assets/logos/arminas.jpg', title: 'Arminas', link:'https://www.arminas-iraq.com/' ,discription:"Real Estate"},
+    { id: 3, imageUrl: '/assets/logos/bleety.png', title: 'Bleety', link:'https://www.bleety.com/' ,discription:"Event Ticket"},
     { id: 4, imageUrl: 'women-transformed.jpeg', title: 'Women Kurd', link:'https://women.krd/' ,discription:"Women Rights"},
-    { id: 5, imageUrl: 'pepu.svg', title: 'Pepu', link:'https://pepu.krd/' ,discription:"Learning Appt"},
+    { id: 5, imageUrl: '/assets/logos/pepu.svg', title: 'Pepu', link:'https://pepu.krd/' ,discription:"Learning Appt"},
     { id: 6, imageUrl: 'zebra.jpg', title: 'Africa', link:'' ,discription:"Charity"},
     ];
   
