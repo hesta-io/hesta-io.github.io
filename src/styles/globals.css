@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-@import "slick-carousel/slick/slick.css";
-@import "slick-carousel/slick/slick-theme.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
@@ -10,48 +7,182 @@
 }
 
 html {
-  font-family: poppins;
-  background: #000814;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #ffffff;
 }
 
 html,
 body {
   scroll-behavior: smooth !important;
+  color: var(--text-primary);
+}
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7f9fc;
+  --bg-dark: #111111;
+  --bg-dark-secondary: #1a1a1a;
+  --text-primary: #1a1a2e;
+  --text-secondary: #6b7280;
+  --text-light: #9ca3af;
+  --accent: #1ED07C;
+  --accent-hover: #19b869;
+  --accent-light: rgba(30, 208, 124, 0.08);
+  --accent-border: rgba(30, 208, 124, 0.2);
+  --border-color: #e5e7eb;
+  --border-light: #f0f0f0;
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.06), 0 4px 10px rgba(0, 0, 0, 0.04);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
 }
 
 .max-w {
-  max-width: 1500px;
+  max-width: 1200px;
   margin: auto;
+  padding: 0 2rem;
 }
 
-/* width and height of the scrollbar */
-body::-webkit-scrollbar {
-  width: 0;
+.body-box {
+  background: var(--bg-primary);
+  min-height: 100vh;
 }
 
-/* background of the scrollbar */
-body::-webkit-scrollbar-track {
-  background: transparent;
+h1 {
+  font-size: 3.75rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
 }
 
-/* color of the scrollbar handle */
-body::-webkit-scrollbar-thumb {
-  background: transparent; 
-
+h2 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
 }
 
-/* hover effect on the scrollbar handle */
-body::-webkit-scrollbar-thumb:hover {
-  background: transparent;
+h3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
 }
 
 .animated-component {
   opacity: 0;
-  transform: translateY(70px);
-  transition: all 0.5s ease-in-out;
+  transform: translateY(16px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 .animated-component.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.btn {
+  padding: 0.8125rem 1.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: none;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background: var(--text-primary);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #2d2d44;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1.5px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  border-color: var(--text-primary);
+  transform: translateY(-2px);
+}
+
+.btn-accent {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.btn-accent:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 208, 124, 0.3);
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.25rem; }
+  .max-w { padding: 0 1.25rem; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.875rem; }
+  h2 { font-size: 1.625rem; }
+  h3 { font-size: 1.125rem; }
+  p { font-size: 0.9375rem; }
+  .max-w { padding: 0 1rem; }
+}
+
+@media (max-width: 360px) {
+  h1 { font-size: 1.625rem; }
+  h2 { font-size: 1.5rem; }
+  .max-w { padding: 0 0.75rem; }
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+.section-padding-sm {
+  padding: 4rem 0;
+}
+
+.text-center { text-align: center; }
+.text-accent { color: var(--accent); }
+
+.parallax-group {
+  position: relative;
+}
+
+.parallax-anchor {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.parallax-overlay {
+  position: relative;
+  z-index: 2;
 }

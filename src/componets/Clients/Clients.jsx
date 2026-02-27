@@ -1,21 +1,29 @@
-import React from "react";
+import React from 'react'
 
 const Clients = () => {
+  const clients = [
+    { name: 'Message24', logo: '/assets/logos/message24.png' },
+    { name: 'Toyota Iraq', logo: '/assets/logos/toyota.svg' },
+    { name: 'Furatpay', logo: '/assets/logos/furatpay.png' },
+    { name: 'Frobel', logo: '/assets/logos/frobel.svg' },
+    { name: 'Pepu', logo: '/assets/logos/pepu.svg' },
+    { name: 'Connected MENA', logo: '/assets/logos/connectedmena.svg' }
+  ];
+
   return (
-    <div className="clients-cont">
-      <h1>Trusted By</h1>
-
-      <div className="clients-list">
-          <img src="assets/logos/toyota.svg" alt="Toyota Iraq" />
-          <img src="assets/logos/frobel.png" height="70px" alt="Frobel" />
-          <img src="assets/logos/sticker-technology.png" height="90px" alt="Sticker Technology" />
-          <img src="assets/logos/bleety.svg" height="70px" alt="Bleety App" />
-          {/* <img src="assets/logos/arminas.png" height="130px" alt="Arminas Iraq" /> */}
-          <img src="assets/logos/akeed-express.svg" height="130px" alt="Akeed Express" />
-          <img src="assets/logos/pepu.svg" height="130px" alt="Pepu" />
+    <section className="clients-section">
+      <div className="max-w">
+        <p className="clients-label">Trusted By</p>
+        <div className="clients-strip">
+          {clients.map((client, index) => (
+            <div key={index} className="client-logo-wrapper">
+              <img src={client.logo} alt={client.name} className="client-logo" />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-  );
-};
+    </section>
+  )
+}
 
-export default Clients;
+export default Clients

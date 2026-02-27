@@ -1,8 +1,5 @@
-
-import {  Hero, Clients, Footer, Info1, Info2, Products, Services, Testimonials } from '../componets'
-import { Sliders } from '../constants'
+import { Hero, About, Footer, Products, Services, ServiceGrid } from '../componets'
 import { useState, useEffect, useRef } from 'react';
-
 
 function AnimatedComponent({ children }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,62 +37,37 @@ function AnimatedComponent({ children }) {
 }
 
 export default function Home() {
-  const [isLastVisible, setIsLastVisible] = useState(false);
-  const lastRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsLastVisible(true);
-        }
-      },
-      {
-        rootMargin: '0px',
-        threshold: 0.1,
-      }
-    );
-
-    if (lastRef.current) {
-      observer.observe(lastRef.current);
-    }
-
-    return () => {
-      if (lastRef.current) {
-        observer.unobserve(lastRef.current);
-      }
-    };
-  }, []);
-
   return (
-
     <div className='body-box'>
       <AnimatedComponent>
         <Hero />
       </AnimatedComponent>
-      <AnimatedComponent>
-        <Clients />
-      </AnimatedComponent>
-      <AnimatedComponent>
-        <Info1 />
-      </AnimatedComponent>
-      <AnimatedComponent>
-        <Services />
-      </AnimatedComponent>
-      <AnimatedComponent>
-        <Sliders />
-      </AnimatedComponent>
-      <AnimatedComponent>
-        <Testimonials />
-      </AnimatedComponent>
+
+      <div className="parallax-group">
+        <div className="parallax-anchor">
+          <AnimatedComponent>
+            <About />
+          </AnimatedComponent>
+        </div>
+
+        <div className="parallax-overlay">
+          <AnimatedComponent>
+            <Services />
+          </AnimatedComponent>
+
+          <AnimatedComponent>
+            <ServiceGrid />
+          </AnimatedComponent>
+        </div>
+      </div>
+
       <AnimatedComponent>
         <Products />
       </AnimatedComponent>
-      <AnimatedComponent className={`animated-component ${isLastVisible ? 'visible' : ''}`} ref={lastRef}>
-        <Info2 />
+
+      <AnimatedComponent>
         <Footer />
       </AnimatedComponent>
     </div>
-
   );
 }

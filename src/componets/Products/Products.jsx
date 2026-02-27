@@ -1,118 +1,45 @@
 import React from 'react'
-import { ImageCard } from '..'
 import { imageData } from "../../data/index"
-import { useState, useEffect, useRef } from 'react';
 
-
-function AnimatedComponent({ children }) {
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      {
-        rootMargin: '0px',
-        threshold: 0.1,
-      }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, []);
-
+const Products = () => {
   return (
-    <div className={`animated-component ${isVisible ? 'visible' : ''}`} ref={ref}>
-      {children}
-    </div>
+    <section className='products-section' id='products'>
+      <div className='max-w'>
+        <div className="products-header">
+          <h2 className="products-title">
+            Our <span className="text-accent">Work</span>
+          </h2>
+          <p className="products-subtitle">
+            Projects we've brought to life
+          </p>
+        </div>
+
+        <div className="products-grid">
+          {imageData.map((data, i) => (
+            <a
+              key={data.id}
+              href={data.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-card"
+            >
+              <span className="project-number">0{i + 1}</span>
+              <div className="project-body">
+                <h3 className="project-name">{data.title}</h3>
+                <p className="project-desc">{data.discription}</p>
+              </div>
+              <span className="project-visit">
+                Visit
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
   );
-}
+};
 
-  const Products = () => {
-    const [isLastVisible, setIsLastVisible] = useState(false);
-    const lastRef = useRef(null);
-  
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setIsLastVisible(true);
-          }
-        },
-        {
-          rootMargin: '0px',
-          threshold: 0.1,
-        }
-      );
-  
-      if (lastRef.current) {
-        observer.observe(lastRef.current);
-      }
-  
-      return () => {
-        if (lastRef.current) {
-          observer.unobserve(lastRef.current);
-        }
-      };
-    }, []);
-    return (
-    <div className='product-cont max-w'>
-      <h1>Our Work</h1>
-    <div className="product-row">
-    <AnimatedComponent>
-
-    {imageData.slice(0, 1).map((data) => (
-    <ImageCard key={data.id} imageUrl={data.imageUrl} title={data.title} link={data.link} disc={data.discription} featured={data.featured}/>
-    ))}
-    </ AnimatedComponent>
-    <AnimatedComponent>
-    {imageData.slice(1, 2).map((data) => (
-    <ImageCard key={data.id} imageUrl={data.imageUrl} title={data.title} link={data.link} disc={data.discription}/>
-    ))}
-    </ AnimatedComponent>
-    </div>
-
-    <div className="product-row">
-    <AnimatedComponent>
-
-    {imageData.slice(2, 3).map((data) => (
-    <ImageCard key={data.id} imageUrl={data.imageUrl} title={data.title} link={data.link} disc={data.discription}/>
-    ))}
-    </ AnimatedComponent>
-    <AnimatedComponent>
-    {imageData.slice(3, 4).map((data) => (
-    <ImageCard key={data.id} imageUrl={data.imageUrl} title={data.title} link={data.link} disc={data.discription}/>
-    ))}
-    </ AnimatedComponent>
-    </div>
-
-    <div className="product-row">
-    <AnimatedComponent>
-
-    {imageData.slice(4, 5).map((data) => (
-    <ImageCard key={data.id} imageUrl={data.imageUrl} title={data.title} link={data.link} disc={data.discription}/>
-    ))}
-    </ AnimatedComponent>
-    <AnimatedComponent>
-    {imageData.slice(5, 6).map((data) => (
-    <ImageCard key={data.id} imageUrl={data.imageUrl} title={data.title} link={data.link} disc={data.discription}/>
-    ))}
-    </ AnimatedComponent>
-    </div>
-
-    </div>
-    );
-    };
-    
-    export default Products;
+export default Products;

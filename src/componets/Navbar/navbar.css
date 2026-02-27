@@ -1,177 +1,169 @@
+.nav-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-bg.nav-scrolled {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 var(--border-color);
+}
+
 .Navbar {
-  position: relative;
-  width: 100%;
-  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
-  padding: 3rem 13rem;
-  z-index: 10;
+  padding: 1.125rem 2rem;
+}
+
+.Navbar-logo {
+  display: flex;
+  align-items: center;
 }
 
 .Navbar-logo img {
-  width: 45px;
-  height: 45px;
+  height: 36px;
+  width: auto;
 }
 
-.empty-box {
+.Navbar-logo .logo-dark {
+  display: none;
+}
+
+.nav-bg.nav-scrolled .Navbar-logo .logo-light {
+  display: none;
+}
+
+.nav-bg.nav-scrolled .Navbar-logo .logo-dark {
   display: block;
-}
-
-.Navbar-logo a {
-  font-weight: 500;
-  font-size: 20px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.Navbar-menu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 120px;
 }
 
 .Navbar-menu ul {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.Navbar-menu li {
-  margin: 0 30px;
+  gap: 2.5rem;
 }
 
 .Navbar-menu a {
-  font-size: 1rem;
-  font-size: 18px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.Navbar-menu a:hover,
-a:focus {
-  color: #1ED07C;
-  transition: 0.3s ease-in-out;
-}
-
-.nav-booking a {
-  padding: 2px 25px;
+  font-size: 0.9375rem;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 36px;
-  color: #050505;
-  display: block;
-  background-color: #fff;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  border-radius: 3px;
-  position: relative;
-  overflow: hidden;
-  transition: all 300ms ease;
-  z-index: 1;
+  transition: color 0.2s ease;
 }
 
-.nav-booking a::after {
-  content: "";
-  background: -webkit-linear-gradient(0deg, #1ED07C, rgba(31, 193, 228, 0.53));
-  -webkit-text-fill-color: transparent;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 100%;
-  transition: all 300ms ease;
-  z-index: -1;
+.Navbar-menu a:hover {
+  color: #ffffff;
 }
-.nav-booking a:hover {
-  color: #fff;
+
+.nav-bg.nav-scrolled .Navbar-menu a {
+  color: var(--text-secondary);
 }
-.nav-booking a:hover::after {
-  right: 0;
+
+.nav-bg.nav-scrolled .Navbar-menu a:hover {
+  color: var(--text-primary);
+}
+
+.nav-booking {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-booking .btn {
+  font-size: 0.875rem;
+  padding: 0.625rem 1.5rem;
+}
+
+.nav-booking .btn-primary {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.nav-bg.nav-scrolled .nav-booking .btn-primary {
+  background: var(--text-primary);
+  color: #ffffff;
 }
 
 .Navbar-toggle {
   display: none;
 }
 
-
-/*Media Querry*/
-@media (max-width: 1150px) {
-  .Navbar {
-    padding-right: 2rem;
-    padding-left: 8rem;
-  }
-
-  .nav-booking a {
-
-    padding: 3px 10px;
-  }
+.Navbar-toggle span {
+  display: block;
+  height: 2px;
+  width: 22px;
+  margin: 5px 0;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  border-radius: 2px;
 }
 
+.nav-bg.nav-scrolled .Navbar-toggle span {
+  background: var(--text-primary);
+}
 
+.nav-overlay {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .Navbar {
-    flex-direction: row;
-    align-items: center;
-    color: #000814;
-    padding-right: 4rem;
-
+    padding: 1rem 1.25rem;
   }
 
-  .empty-box {
+  .Navbar-logo img {
+    height: 30px;
+  }
+
+  .nav-booking .btn {
     display: none;
   }
-
-  .nav-booking a {
-
-    display: none;
-  }
-
 
   .Navbar-menu {
     display: none;
     position: fixed;
     top: 0;
     right: -100%;
-    width: 100%;
-    width: 220px;
-    height: 300px;
-    padding: 1rem;
-    background-color: #1ED07C;
+    width: 280px;
+    height: 100vh;
+    height: 100dvh;
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.08);
     z-index: 9000;
   }
 
   .Navbar-menu ul {
-    display: flex;
     flex-direction: column;
-    padding-top: 60px;
-    text-align: right;
-  }
-
-  .Navbar-menu ul li {
-    padding-bottom: 10px;
+    padding-top: 4rem;
+    gap: 1.5rem;
   }
 
   .Navbar-menu ul li a {
-    color: #000814;
-    font-size: 22px;
-    font-weight: 400;
-  }
-
-  .Navbar-menu a:hover,
-  a:focus {
-    color: #000814;
-    transition: 0.45s ease-in-out;
+    color: var(--text-primary);
+    font-size: 1.125rem;
   }
 
   .Navbar-menu.active {
     display: block;
-    animation: slideIn 0.5s forwards;
+    animation: slideIn 0.3s forwards;
+  }
+
+  .nav-overlay.active {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 8999;
   }
 
   .Navbar-toggle {
@@ -180,17 +172,8 @@ a:focus {
     z-index: 9999;
   }
 
-  .Navbar-toggle span {
-    display: block;
-    height: 3px;
-    width: 25px;
-    margin: 5px;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-  }
-
   .Navbar-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(6px, 6px);
   }
 
   .Navbar-toggle.active span:nth-child(2) {
@@ -198,23 +181,11 @@ a:focus {
   }
 
   .Navbar-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(6px, -6px);
   }
 }
 
 @keyframes slideIn {
-  from {
-    right: -100%;
-  }
-
-  to {
-    right: 0;
-  }
-}
-
-@media (max-width: 630px) {
-  .Navbar {
-    padding: 2rem;
-  }
-
+  from { right: -100%; }
+  to { right: 0; }
 }
