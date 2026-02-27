@@ -7,8 +7,10 @@ const clients = [
   { name: 'Toyota Iraq', logo: '/assets/logos/toyota.svg' },
   { name: 'Furatpay', logo: '/assets/logos/furatpay.png' },
   { name: 'Frobel', logo: '/assets/logos/frobel.svg' },
+  { name: 'YBS', logo: '/assets/logos/ybs.svg' },
+  { name: 'Connected MENA', logo: '/assets/logos/connectedmena.svg' },
   { name: 'Pepu', logo: '/assets/logos/pepu.svg' },
-  { name: 'Connected MENA', logo: '/assets/logos/connectedmena.svg' }
+  { name: 'Emekco', logo: '/assets/logos/emekco.svg' }
 ];
 
 const Hero = () => {
@@ -63,7 +65,7 @@ const Hero = () => {
               <img
                 src={client.logo}
                 alt={client.name}
-                className={`hero-client-logo ${client.name === 'Pepu' ? 'hero-client-logo--pepu' : ''}`}
+                className={`hero-client-logo ${client.name === 'Pepu' ? 'hero-client-logo--pepu' : ''} ${client.name === 'Emekco' ? 'hero-client-logo--emekco' : ''}`}
               />
             </div>
           ))}

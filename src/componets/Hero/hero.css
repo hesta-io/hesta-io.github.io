@@ -137,6 +137,11 @@
   opacity: 1;
 }
 
+.hero-client-logo--emekco {
+  max-width: 140px;
+  max-height: 48px;
+}
+
 @media (max-width: 768px) {
   .hero-content {
     padding: 8rem 1.5rem 4rem;

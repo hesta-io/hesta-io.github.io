@@ -28,6 +28,8 @@ export const dataDigitalBestSeller = [
   export const imageData = [
     { id: 0, title: 'Message24', link: 'https://message24.net', discription: 'AI CRM for Small Businesses & Social Media Ecommerce' },
     { id: 1, title: 'FuratPay', link: 'https://furatpay.com', discription: "Iraq's first all-in-one payment platform with instant invoicing, subscriptions, WooCommerce integration, and unified API" },
-    { id: 2, title: 'Pepu', link: 'https://pepu.krd/', discription: 'Pepu is a new educational platform aimed at supporting students for better learning outcomes and achieving higher grades.' },
+    { id: 2, title: 'Emekco', link: 'https://www.emekco.com/', discription: 'Exclusive distributer for world class glass and aluminum brands: Guardian glass, Sisecam, AGC, ASAŞ, Akpa and Albond' },
+    { id: 3, title: 'YBS', link: 'https://www.ybservice.iq/', discription: 'YBS is a leading company in Iraq for payment processing solutions that offers various and diverse services to banks, institutions, syndicates, stores, E-merchants, etc.' },
+    { id: 4, title: 'Pepu', link: 'https://pepu.krd/', discription: 'Pepu is a new educational platform aimed at supporting students for better learning outcomes and achieving higher grades.' },
   ];
   
